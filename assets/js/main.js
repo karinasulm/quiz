@@ -100,8 +100,7 @@ function checkAnswer() {
 	// проверяем последний ли вопрос
 	if (questionIndex !== questions.length - 1) {
 		questionIndex++;
-		const qestionsPercent = Math.round((questionIndex / questions.length) * 100);
-		quiestionsRange.style.width = `${qestionsPercent}%`;
+		changeRange();
 		clearPage();
 		showQuestion();
 	} else {
