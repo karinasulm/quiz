@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2b2330;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+.quiz {
+  position: relative;
+  width: 640px;
+  max-width: 90vw;
+  padding: 40px 20px 80px 20px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  background-color: #edede9;
+  overflow: hidden;
+}
+.quiz__range {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  width: 90%;
+  height: 15px;
+  background-color: #d6d6cd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.quiz__range span {
+  position: absolute;
+  border-radius: inherit;
+  width: 0;
+  height: 100%;
+  background-color: #6d597a;
+  z-index: 10;
+}
+.quiz__title {
+  padding: 10px 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.quiz__summary {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 400;
+}
+.quiz__result {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.quiz__list {
+  list-style-type: none;
+  padding: 0;
+}
+.quiz__list label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 10px;
+  transition: background-color 0.3s ease;
+}
+.quiz__list label:hover {
+  background-color: #e2e2db;
+}
+.quiz__list input[type="radio"] {
+  margin-right: 10px;
+}
+.quiz__submit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+}
+.submit {
+  background-color: #6d597a;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit:hover {
+  background-color: #604e6b;
+}
+.submit:active,
+.submit:focus {
+  background-color: #53435d;
+}
