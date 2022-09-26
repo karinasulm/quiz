@@ -1,2 +1,2 @@
 # Quiz
-It's a quiz javaScript app about cockatiels.
+This is a javaScript app, in which you can take a quiz about cockatiels.
